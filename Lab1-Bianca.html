@@ -1,0 +1,117 @@
+<!-- Lab1 - Bianca -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab1 - Bianca</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+//1
+	function makeAbba(a, b) {
+		return a + b + b + a;
+}
+
+//2 
+	function endsLy(word){
+		if(word.endsWith("ly")){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+
+//3 
+	function firstHalf(word){
+		var len = word.length;
+		var medium = (len / 2);
+		word = word.slice(0, medium);
+		return word;
+	}
+
+//4 
+	function right2(word){
+		var len = word.length;
+		var ret = word.slice(-2)
+		if(len <= 2){
+			return word;
+		}
+		else{
+			present =  ret + word;
+			return present.substr(0, present.length -2);
+		}			
+}
+
+//5 
+	function conCat(str1, str2){
+		var first = str1.substr(-1);
+		var second = str2.substring(0, 1);			
+		if(first == second){
+		result = str1.concat(str2.substr(1, 3));
+			return result;
+		}
+		else{
+		result = str1.concat(str2);
+			return result;
+		}
+	}
+
+//6 
+	function frontAgain(word){
+		var len = word.length;
+		var beg = word.substr(0, 2);
+		var end = word.substr(-2);
+		if(beg == end){
+			return true;	
+	}
+		else
+			return false;
+}
+
+//7  
+	function deFront(word){
+		var len = word.length;
+		if(word.charAt(0) == "a"){	
+		var result = word.substr(2, len);
+			return ("a" + result);			
+		}
+		else{
+		var result = word.substr(2, len);
+		return result;
+		}
+	}
+
+//8 
+	function withoutX2 (word){
+		var len = word.length;
+		if(len <= 2){
+			return word;
+		}
+		else{
+			return (word.replace("x", ""));
+		}
+	}
+
+//9 
+	function lastChars(first, second){
+		first = first.substring(0,1);
+		second = second.substr(-1);
+		if(second == ""){
+			second = "@";
+		}
+		return first + second;
+	}
+
+//10 
+	function middleTwo(word){
+		var len = word.length;
+		var medium = (len / 2);
+		word = word.slice(medium - 1, medium + 1);
+		return word;
+
+	}
+
+	</script>
+</body>
+</html>
