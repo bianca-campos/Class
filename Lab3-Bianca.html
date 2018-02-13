@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab3 - Bianca</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<style type="text/css">
+
+/*Q3*/
+
+	body{
+		padding-top: 10px;
+		padding-left: 10px;
+	}
+
+	#container p{
+		font-weight: bold;
+		font-size: 	1.1em;
+		text-align: center;
+
+	}
+
+	#container{
+	    display: table-cell;
+		width: 400px;
+		height: 400px;			
+		/*border: 1px solid;*/
+		padding: 5px;
+	}
+
+	table, th, td{
+	font-family: 'verdana';
+	font-size: 	1.1em;
+	border: 1px solid black;
+	width: 400px;
+	height: 130px;
+	text-align: center;
+	padding: 5px;
+	}
+
+
+	</style>
+</head>
+<body>
+
+
+<div id="animate">
+<div id="container">
+	<p>Sliding Puzzle</p>
+	<table>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td></td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>7</td>
+		<td>8</td>
+	</tr>
+</table>
+</div>
+</div>
+<p>Moves:</p>
+<p>Start Time:</p>
+<input type="button" class="btn-default" value="RESTART GAME">
+
+<script type="text/javascript">
+
+//Q1 - a 
+// function ret(arr){
+// var result = arr[0]+arr[2];
+// return result;
+// }
+// console.log(ret(['dog', 'cat', 'deer']));
+
+
+//Q1 - b
+// function kids(girls, boys){
+// var children = girls.concat(boys);
+// return children;
+// }
+// console.log(kids(["Cecillie", "Lone"], ["Emil", "Tobias", "Linus"]));
+
+//Q1 - c
+// function question(arr){
+// 	for (var i = arr.length; i < 5; i += 1) {
+// 		arr[i] = Math.pow(i,2);
+// 		return arr;
+// 	}
+// }
+// console.log(question([20, 30]));
+
+
+// Q1 - d
+// var sum = 0
+// function question(arr){
+// for (var i = 0; i <= 7; i += 1) {
+// 	sum = sum + arr[i];
+// }
+// 	return sum;
+// }
+// console.log(question([10, 20, 30, 40, 50, 60, 70, 90]));
+
+
+//Q1 - e
+// var DL = 5;
+// var d = [25.0, 9.0, 10.0, 25.0, 15.0];
+// var mi = 0;
+// var m = d[mi];
+// for (var i = 1; i < DL; i++) {
+// 	if (d[i] < m) {
+// 		mi = i;
+// 		m = d[mi];
+// 		console.log(m);
+// 	}
+// }
+// console.log("mi=", mi, " m=",m);
+
+
+//Q2
+// function sumArray(arr, size){
+// var sum = 0
+// for (var i = 0; i < size; i++) {
+// 	sum = arr[i].reduce((a, b) => a + b, sum);
+	
+// }
+// 	return sum;
+// }
+// console.log(sumArray([[1, 2, 3, 4, 5], [2, 3, 4, 5, 6], [3, 4, 5, 6, 7], [4, 5, 6, 7, 8], [5, 6, 7, 8, 9]], 5));
+
+
+
+
+	</script>
+</body>
+</html>
